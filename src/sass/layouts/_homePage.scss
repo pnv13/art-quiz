@@ -1,0 +1,24 @@
+.home {
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.button {
+  width: 15rem;
+  text-align: center;
+  font-size: 25px;
+  border: 1px solid #ffffff;
+  transition: 0.5s ease-in-out;
+
+  span {
+    transition: 0.5s ease-in-out;
+  }
+}
+
+.button:hover {
+  border: 1px solid $button-hover-color;
+
+  span {
+    color: $button-hover-color;
+  }
+}

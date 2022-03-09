@@ -1,0 +1,53 @@
+.settings {
+  justify-content: space-between;
+}
+
+.settings__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+
+.settingsBlock {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  border-radius: 15px;
+  height: 400px;
+  width: 400px;
+}
+
+.soundIco,
+.timeIco {
+  color: $button-hover-color;
+  font-size: 55px;
+}
+
+.progressBar {
+  -webkit-appearance: none;
+  background: linear-gradient(90deg, dimgray 0, dimgray 40%, #e5e5e5 0, #e5e5e5);
+  border: 1px solid dimgray;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 6px;
+  width: 270px;
+  transition: 0.5s ease-in-out;
+}
+
+.progressBar::-webkit-slider-thumb {
+  width: 13px;
+  height: 13px;
+  background-color: $button-hover-color;
+  border-radius: 50%;
+  -webkit-appearance: none;
+}
+
+@media (max-width: 768px) {
+  .settings__wrapper {
+    row-gap: 20px;
+  }
+}

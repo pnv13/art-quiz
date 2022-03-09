@@ -1,0 +1,16 @@
+{
+  "name": "art-quiz",
+  "description": "My new js application",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "rss-scripts start",
+    "build": "rss-scripts build"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "rss-scripts": "^0.2.4"
+  }
+}

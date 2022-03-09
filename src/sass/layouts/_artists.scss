@@ -1,0 +1,130 @@
+.artists {
+  justify-content: space-between;
+}
+
+.questionContent {
+  width: 80%;
+}
+
+.questionContent__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  column-gap: 20px;
+
+  li {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+  }
+
+  .red {
+    background: red;
+  }
+  .green {
+    background: green;
+  }
+}
+
+.artistsPicture {
+  height: 520px;
+  width: 80%;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.artistsAnswers {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+
+  li {
+    width: 50%;
+    padding: 20px;
+  }
+  li:hover {
+    cursor: pointer;
+    color: $button-hover-color;
+  }
+
+  li:nth-of-type(1) {
+    border-bottom: 1px solid dimgray;
+    border-right: 1px solid dimgray;
+  }
+  li:nth-of-type(1):hover {
+    border-bottom: 1px solid $button-hover-color;
+    border-right: 1px solid $button-hover-color;
+  }
+
+  li:nth-of-type(2) {
+    border-bottom: 1px solid dimgray;
+    border-left: 1px solid dimgray;
+  }
+  li:nth-of-type(2):hover {
+    border-bottom: 1px solid $button-hover-color;
+    border-left: 1px solid $button-hover-color;
+  }
+
+  li:nth-of-type(3) {
+    border-top: 1px solid dimgray;
+    border-right: 1px solid dimgray;
+  }
+  li:nth-of-type(3):hover {
+    border-top: 1px solid $button-hover-color;
+    border-right: 1px solid $button-hover-color;
+  }
+
+  li:nth-of-type(4) {
+    border-top: 1px solid dimgray;
+    border-left: 1px solid dimgray;
+  }
+  li:nth-of-type(4):hover {
+    border-top: 1px solid $button-hover-color;
+    border-left: 1px solid $button-hover-color;
+  }
+}
+
+@media (max-width: 500px) {
+  .pagination {
+    width: 100%;
+  }
+
+  .artistsPicture {
+    width: 100%;
+    background: no-repeat center / cover;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .pagination {
+    column-gap: 10px;
+  }
+
+  .artistsPicture {
+    height: 300px;
+    width: 100%;
+    background: no-repeat center / contain;
+    margin: 0 auto;
+  }
+
+  .artistsAnswers {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .questionContent__wrapper {
+    row-gap: 0px;
+  }
+}
